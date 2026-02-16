@@ -1,4 +1,14 @@
-// function currying
+/* Currying is a technique in functional programming where you transform a function that takes multiple arguments 
+ into a sequence of functions, each taking one argument at a time.*/
+
+//  Example of a normal function that takes multiple arguments
+// function Addition(a, b, c){
+//     return a + b + c;
+// }
+
+// console.log(Addition(2, 3, 4)); // 9
+
+// currying function version
 function Addition(a){
     return function(b){
         return function(c){
@@ -24,8 +34,8 @@ userObj = {
 }
 
 function userInfo(obj){
-    return function(userinfo){
-        return obj[userinfo];
+    return function(userInfo){
+        return obj[userInfo];
     }
 }
 
